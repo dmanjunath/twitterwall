@@ -467,7 +467,7 @@ var blocker = (function () {
   };
 }());
 
-var scheduleTimer = setInterval(schedule, 5000);
+var scheduleTimer = setInterval(schedule, 6000);
 
 // start a new queue and on the callback, render the tweet and animate it down
 var twitterQueue = new Queue(config.timings.showTweetsEvery || 3000, function (item) {
@@ -508,7 +508,16 @@ $(window).keydown(function (event) {
 
 init();
 
+var $container = $('#container');
+var pckry = $container.data('packery');
 
+$container.packery({
+  itemSelector: '.item',
+  gutter: 0,
+  "columnWidth": '.item',
+  "rowHeight": '.item',
+  "stamp": ".stamp"
+});
 
 
 

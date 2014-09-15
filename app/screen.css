@@ -19,7 +19,7 @@
   display: box; 
   box-orient: vertical;
   height: 100%; 
-  width: 50%;
+  width: 125%!important;
 }
 
 .hflex-wrapper > *,
