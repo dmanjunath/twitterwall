@@ -10,7 +10,7 @@
 }
 
 html {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC);
+  /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC);*/
   background-position: center -100px; /* 71px */
   background-repeat: repeat, no-repeat;
   background-color: white;
@@ -129,7 +129,7 @@ body {
 #container {
   /*margin-top: .5%;
   margin-left: .5%;*/
-  height: 90%;
+  height: 100%;
 }
 
 .item {
