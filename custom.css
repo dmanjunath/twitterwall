@@ -97,64 +97,8 @@ body {
   /*border-radius: 20px;*/
 }
 
-/* this simply puts a large background image on the schedule element if it matches the schedule time */
-#schedule[data-time="0940"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="0950"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1030"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1110"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1140"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1220"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1430"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1510"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1550"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1620"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1700"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
-  background-size: contain;
-  background-position-y: 18px;
-}
-#schedule[data-time="1900"] {
-  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png); 
+#schedule {
+  background-image: url(images/background.png); 
   background-size: contain;
   background-position-y: 18px;
 }
