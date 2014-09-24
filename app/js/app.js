@@ -585,7 +585,7 @@ var items = [
 var hover_colors = [];
 var indexesToReplace = [1, 4, 5];
 for(i = 0; i <= 6; i++) {
-  var stub = items[i].tileBackground + ',url(' + items[i].image + ')';
+  var stub = 'url(' + items[i].image + ')';
   console.log(stub);
   $('.full-bg-'+i).css('background', stub, 'important').css('background-size', 'cover', 'important').attr('href', items[i].url);
   var target = $('.background-faded-'+i);
