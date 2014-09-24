@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html>
+  <!--[if lte IE 9]>
+    <h2>We're sorry, but your browser isn't currently supported by this board :/</h2>
+    <h2>You need at least Internet Explorer 10 to view this page</h2>
+  <![endif]-->
+
+  <!--[if gte IE 10]>
+    <head>
+      <!-- <link rel="stylesheet" type="text/css" href="test.css"> -->
+      <style type="text/css">
+        html {
+          height:100%;
+          width:100%;
+        }
+
+        body {
+          margin: 0 auto;
+          padding: 0;
+          height: 100%; 
+          overflow: hidden; 
+        }
+
+        #container {
+          /*margin-top: .5%;
+          margin-left: .5%;*/
+          height: 100%;
+        }
+
+        .item {
+          height: 33.4%;
+          width: 33.33%;
+          float: left;
+          background: #0AACAE;
+          /*border: 4px solid #333;
+          border-color: hsla(0, 0%, 0%, 0.3);*/
+          box-sizing:border-box;
+          -moz-box-sizing:border-box;
+          -webkit-box-sizing:border-box;
+
+          font-family: 'Lato' !important;
+          font-style: normal;
+          font-weight: 400;
+
+          cursor: pointer;
+        }
+
+        .item.dh { height: 66.7%; }
+
+        .item h2 {
+          color: white;
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          right: 15px;
+          text-shadow: 1px 1px 1px rgba(19, 18, 18, 0.98);
+          margin-top: 0px;
+          margin-bottom: 0px;
+          font-weight: 300;
+          font-size: 25px;
+        }
+
+        .item h4 {
+          color: white;
+          text-shadow: 1px 1px 1px rgba(19, 18, 18, 0.98);
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          right: 15px;
+          font-weight: 300;
+          font-size: 25px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+
+        .animated {
+          -webkit-animation-duration: 700ms!important;
+          animation-duration: 700ms!important;
+          -webkit-animation-fill-mode: both!important;
+          animation-fill-mode: both!important;
+        }
+
+      </style>
+      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='https:////cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <div id="container" style="">
+        <a class="item full-bg-0 animated fadeInLeft", target="_blank">
+          <div class="background-faded-0">
+            <h4 class="item-text-0">
+            </h4>
+          </div>
+        </a>
+
+        <a class="item full-bg-1 animated fadeInDown", target="_blank">
+          <div class="background-faded-1">
+            <h4 class="item-text-1">
+            </h4>
+          </div>
+        </a>
+
+        <a class="item dh full-bg-2 animated fadeInRight", target="_blank">
+          <div class="background-faded-2">
+            <h2 class="item-text-2">
+            </h2>
+          </div>
+          <!-- <img src="http://higherlogicdownload.s3.amazonaws.com/HL/UploadedImages/7f2de571-92e8-49b0-ba12-27413bf99c95/HL_Blog_Sheridan_300x300%20copy.jpg" style="margin-left:30%;
+          border-radius:150px;"> -->
+        </a>
+
+        <a class="item dh full-bg-3 animated fadeInLeft", target="_blank">
+          <div class="background-faded-3">
+            <h2 class="item-text-3">
+            </h2>
+          </div>
+         <!--  <img src="http://higherlogicdownload.s3.amazonaws.com/HL/UploadedImages/7f2de571-92e8-49b0-ba12-27413bf99c95/HigherLogic_Personify_Webinar.jpg" style="margin-left:30%;
+          border-radius:150px;"> -->
+        </a>
+
+        <a class="item full-bg-4", target="_blank">
+          <div class="background-faded-4">
+            <h4 class="item-text-4">
+            </h4>
+          </div>
+        </a>
+
+        <a class="item full-bg-5 animated fadeInUp", target="_blank">
+          <div class="background-faded-5">
+            <h4 class="item-text-5">
+            </h4>
+          </div>
+        </a>
+
+        <a class="item full-bg-6 animated fadeInRight", target="_blank">
+          <div class="background-faded-6">
+            <h4 class="item-text-6">
+            </h4>
+          </div>
+        </a>
+
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.1.2/packery.pkgd.min.js"></script>
+      
+      <script type="text/javascript">
+        $('#container').packery({
+          itemSelector: '.item',
+          "columnWidth": '.item',
+          "rowHeight": '.item'
+        });
+        var REG = /<img src=.(.*)'\/>/;
+
+        var items = [
+                      {
+                        title: 'Community Management Fundamentals',
+                        image: 'http://image.slidesharecdn.com/communitymgmtbestpracticesonlinemrktgsummitfeb6-110211082901-phpapp02/95/community-management-fundamentals-1-638.jpg',
+                        url: 'http://www.slideshare.net/rhappe/community-management-fundamentals',
+                        tileBackground: 'linear-gradient(rgba(200, 73, 145, .7), rgba(200, 73, 145, .5))',
+                        titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(200, 73, 145, .95);'
+                      },
+                      {
+                        title: 'How to Engage Your Audience Through Content Marketing',
+                        image: 'http://cdn2.hubspot.net/hub/312413/file-404865041-jpg/HUG_Buzz_-_December_2013/marcus_sheridan_keynote_image.jpg',
+                        url: 'http://www.higherlogic.com/resources/learning-series/how-to-engage-your-audience-through-content-marketing',
+                        tileBackground: 'linear-gradient(rgba(10,172,174, .7), rgba(10,172,174, .5))',
+                        titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(10,172,174, .95);'
+                      },
+                      {
+                        title: 'Learn How to Build Bigger, Better and More Active Online Communities',
+                        image: 'http://higherlogicdownload.s3.amazonaws.com/HUG/6ab9a070-fc6c-4010-a591-23cccea8d851/UploadedImages/HUG%20Buzz/image_8_Steps_Guide_iPad_Icons.png',
+                        url: 'http://www.higherlogic.com/resources/learning-series/fever-bee',
+                        tileBackground: 'linear-gradient(rgba(255, 114, 3, 0.75), rgba(255, 123, 19, 0.61))',
+                        titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(255, 123, 19, .90);'
+                      },
+                      {
+                        title: 'Community is the new marketing',
+                        image: 'http://images.eurogamer.net/2013/articles/1/7/0/7/9/7/1/community-is-the-new-marketing-1411045998597.jpg',
+                        url: 'http://www.gamesindustry.biz/articles/2014-09-18-community-is-the-new-marketing',
+                        tileBackground: 'linear-gradient(rgba(255, 114, 3, 0.75), rgba(255, 123, 19, 0.61))',
+                        titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(255, 123, 19, .90);'
+                      },
+                      {
+                        title: '5 Tenets of Engagement Success',
+                        image: 'http://model.shoppingdelpaseo.com.br/uploads/2011/07/top5.jpg',
+                        url: 'http://hug.higherlogic.com/browse/blogs/blogviewer/?BlogKey=c35b1bed-2da7-42ce-a166-71a355c439c7',
+                        tileBackground: 'linear-gradient(rgba(174,176,177, .7), rgba(174,176,177, .5))',
+                        titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(111, 111, 111, 0.90);'
+                      },
+                      {
+                        title: 'Online Communities: Just Regular People Behind Those Pixels',
+                        image: 'http://pbs.twimg.com/media/Bv54a9AIUAEF6Lb.jpg',
+                        url: 'http://associationsnow.com/2014/08/online-communities-just-regular-people-behind-pixels/',
+                        tileBackground: 'linear-gradient(rgba(129,191,79, .7), rgba(129,191,79, .5))',
+                        titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(129,191,79, .95);'
+                      },
+                      {
+                        title: 'Social Strategy Community: Infographic Tools',
+                        image: 'http://pbs.twimg.com/media/Bv54a9AIUAEF6Lb.jpg',
+                        url: 'http://hug.higherlogic.com/communities/community-home/viewthread/?GroupId=223&MID=20818&tab=digestviewer',
+                        tileBackground: 'linear-gradient(rgba(44,177,235, .7), rgba(44,177,235, .5))',
+                        titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(44,177,235, .95);'
+                      }
+                    ];
+
+        var hover_colors = [];
+        var indexesToReplace = [1, 4, 5];
+        
+        $.ajax({
+          type: "POST",
+          headers: { 'Access-Control-Allow-Origin': '*' },
+          url: 'http://104.131.40.143:8585/rss',
+          data: {feedUrl: 'https://app.triblio.com/rss-feed/AGz'}
+        }).done(function(data){
+          console.log(data);
+          for(i = 0; i <= 6; i++) {
+            var stub = items[i].tileBackground + ',url(' + items[i].image + ')';
+            console.log(stub);
+            $('.full-bg-'+i).css('background', stub, 'important').css('background-size', 'cover', 'important').attr('href', items[i].url);
+            var target = $('.background-faded-'+i);
+            target.attr("style", target.attr("style") + "; " + items[i].titleBackground);
+            $('.item-text-'+i).html(items[i].title);
+          }
+        //   // data.forEach(function(item, idx){
+        //   //   var id = '.full-bg-'+(indexesToReplace[idx]);
+        //   //   var url = REG.exec(item.pic)[1];
+        //   //   var stub = 'linear-gradient(rgba(10,172,174, .7), rgba(10,172,174, .5)),url(' + url + ')';
+        //   //   $(id).css('background', stub, 'important').css('background-size', 'cover', 'important').attr('href', item.link);
+        //   //   $('.item-text-'+(indexesToReplace[idx])).html(item.title);
+        //   // });
+          
+        });
+      </script>
+    </body>
+  <![endif]-->
+  
+</html>

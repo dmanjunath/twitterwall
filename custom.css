@@ -13,7 +13,7 @@ html {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2P4//+/MBQzgDAICEMxXAAMYCoRIlCVANL6FYTYi5d+AAAAAElFTkSuQmCC);
   background-position: center -100px; /* 71px */
   background-repeat: repeat, no-repeat;
-  background-color: rgba(255, 123, 19, 0.73);
+  background-color: rgba(255, 123, 19, 0.53);
   /*background-color: white;*/
 }
 
@@ -28,7 +28,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(148, 148, 148, 0.73);
+  background: rgba(102, 102, 102, 0.73);
   padding: 20px;
 }
 
@@ -46,10 +46,11 @@ body {
   background-position: center;
   overflow: hidden;
   /*border-radius:10px;*/
+  height: 200%;
 }
 
 #schedule a {
-  color: rgba(214, 103, 16, 0.8);
+  color: white;
 }
 
 #schedule h3 {
@@ -85,7 +86,6 @@ body {
 .hentry .meta, #tweets .meta a { color: #99CFD7; }
 #tweets li {
   background: white;
-  border-radius: 10px;
 
   -webkit-box-shadow: 0px 0px 11px 0px rgba(121, 71, 38, 0.75);
   -moz-box-shadow:    0px 0px 11px 0px rgba(121, 71, 38, 0.75);
@@ -99,40 +99,64 @@ body {
 
 /* this simply puts a large background image on the schedule element if it matches the schedule time */
 #schedule[data-time="0940"] {
-  background-image: url(/images/sample/remy.jpg);
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="0950"] {
-  background-image: url(/images/sample/jeremy.jpg);
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1030"] {
-  background-image: url(/images/sample/phil.jpg);
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1110"] {
-  background-image: url(/images/sample/break1.jpg);
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1140"] {
-  background-image: url(/images/sample/marijn.jpg);
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1220"] {
-  background-image: url(/images/sample/rik.jpg);
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1430"] {
-  background-image: url(/images/sample/nicholas.jpg);
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1510"] {
-  background-image: url(/images/sample/glenn.jpg);
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1550"] {
-  background-image: url(/images/samplebreak2.jpg);
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1620"] {
-  background-image: url('http://danzarrella.com/large_new_headshot.jpg');
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1700"] {
-  background-image: url('http://dhwpnzcd7dr1o.cloudfront.net/wp-content/uploads/2012/07/Sarah-HiRes-Crop.jpg');
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png);
+  background-size: contain;
+  background-position-y: 18px;
 }
 #schedule[data-time="1900"] {
-  background-image: url(/images/sample/closing.jpg); 
+  background-image: url(http://higherlogicdownload.s3.amazonaws.com/HUG/91c17e8a-1e32-47b2-a73c-d11e2e41d10d/UploadedImages/2014%20HUG%20SF/triblio/HigherLogic_SuperForum_2014_Art.png); 
+  background-size: contain;
+  background-position-y: 18px;
 }
 
 /* this allows us to customise what part is animated to fullscreen */
@@ -158,94 +182,53 @@ body {
   clear: both;
 }
 
-/*#container {
-  margin-top: .5%;
-  margin-left: .5%;
-}*/
-
-.item,
-.grid-sizer {
-  width: 32.8%;
+#container {
+  /*margin-top: .5%;
+  margin-left: .5%;*/
+  height: 90%;
 }
 
 .item {
-  height: 32.5%;
+  height: 33.4%;
+  width: 33.33%;
   float: left;
   background: #0AACAE;
-  border: 4px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.3);
+  /*border: 4px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.3);*/
   box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
+
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 400;
+
+  cursor: pointer;
 }
 
-.item.dh { height: 65.6%; background: rgba(255, 123, 19, 0.73); }
-
-
-/* Working method */
-.full-bg-1 {
-  background: 
-    linear-gradient(
-      rgba(10,172,174, .9), 
-      rgba(10,172,174, .7)
-    ),
-    url('http://higherlogicdownload.s3.amazonaws.com/HL/UploadedImages/7f2de571-92e8-49b0-ba12-27413bf99c95/2014_ASAE_Annual_Nashville.jpg')!important;
-    background-size: cover!important;
-}
-
-.full-bg-2 {
-  background: 
-    linear-gradient(
-      rgba(10,172,174, .9), 
-      rgba(10,172,174, .7)
-    ),
-    url('http://higherlogicdownload.s3.amazonaws.com/HUG/UploadedImages/f5e1d932-2bf8-4166-9948-47a258b83e39/Blogs/HL_Blog_BOD_300x300.jpg')!important;
-    background-size: cover!important;
-}
-
-.full-bg-3 {
-  background: 
-    linear-gradient(
-      rgba(10,172,174, .9), 
-      rgba(10,172,174, .7)
-    ),
-    url('http://higherlogicdownload.s3.amazonaws.com/HUG/UploadedImages/f5e1d932-2bf8-4166-9948-47a258b83e39/Blogs/HL_Blog_Subscribe_300x300.jpg')!important;
-    background-size: cover!important;
-}
-
-.full-bg-4 {
-  background: 
-    linear-gradient(
-      rgba(10,172,174, .9), 
-      rgba(10,172,174, .7)
-    ),
-    url('http://higherlogicdownload.s3.amazonaws.com/HUG/UploadedImages/f5e1d932-2bf8-4166-9948-47a258b83e39/Blogs/HL_Blog_Optin_300x300.jpg')!important;
-    background-size: cover!important;
-}
-
-.full-bg-5 {
-  background: 
-    linear-gradient(
-      rgba(10,172,174, .9), 
-      rgba(10,172,174, .7)
-    ),
-    url('http://higherlogicdownload.s3.amazonaws.com/HUG/UploadedImages/f5e1d932-2bf8-4166-9948-47a258b83e39/Blogs/HL_Blog_Detractor_300x300.jpg')!important;
-    background-size: cover!important;
-}
-
-.tinted-image {
-  background: linear-gradient(rgba(255, 114, 3, 0.75), rgba(255, 123, 19, 0.61))!important;
-}
-
+.item.dh { height: 66.7%; }
 .item h2 {
-  color:white;
-  margin-left:15px;
-  margin-top:15%;
-  text-align:center;
-  text-shadow: 1px 1px 18px rgba(19, 18, 18, 0.98);
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 15px;
+  text-shadow: 1px 1px 1px rgba(19, 18, 18, 0.98);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 300;
+  font-size: 25px;
 }
-.item img {
-  box-shadow: 0px -1px 4px 2px rgba(0,0,0,0.75);
-  moz-box-shadow: 0px -1px 4px 2px rgba(0,0,0,0.75);
-  webkit-box-shadow: 0px -1px 4px 2px rgba(0,0,0,0.75);
+
+.item h4 {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(19, 18, 18, 0.98);
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 15px;
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

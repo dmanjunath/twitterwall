@@ -1,0 +1,184 @@
+html {
+  height:100%;
+  width:100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%; 
+  overflow: hidden; 
+}
+
+#container {
+  /*margin-top: .5%;
+  margin-left: .5%;*/
+  height: 100%;
+}
+
+.item {
+  height: 33.4%;
+  width: 33.33%;
+  float: left;
+  background: #0AACAE;
+  /*border: 4px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.3);*/
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.item.dh { height: 66.7%; }
+
+
+.full-bg-1 {
+  background: 
+    linear-gradient(
+      rgba(200, 73, 145, .7), 
+      rgba(200, 73, 145, .5)
+    ),
+    url('http://media-cache-ak0.pinimg.com/originals/0c/c9/b7/0cc9b7e714d720e44645142334b6942a.jpg')!important;
+    background-size: cover!important;
+}
+
+/*.full-bg-2 {
+  background: 
+    linear-gradient(
+      rgba(10,172,174, .7), 
+      rgba(10,172,174, .5)
+    ),
+    url('http://media-cache-ec0.pinimg.com/originals/5d/1d/fe/5d1dfebad4ca7970f33e1fad35fabf92.jpg')!important;
+    background-size: cover!important;
+}
+
+.full-bg-3 {
+  background: 
+    linear-gradient(
+      rgba(129,191,79, .7), 
+      rgba(129,191,79, .5)
+    ),
+    url('http://media-cache-ak0.pinimg.com/originals/0a/ff/8c/0aff8cc94305edd1e6b8d5c56f0309de.jpg')!important;
+    background-size: cover!important;
+}
+
+.full-bg-4 {
+  background: 
+    linear-gradient(
+      rgba(174,176,177, .7), 
+      rgba(174,176,177, .5)
+    ),
+    url('http://media-cache-ec0.pinimg.com/originals/83/a7/a1/83a7a15433d0deae5056d01227b09336.jpg')!important;
+    background-size: cover!important;
+}*/
+
+.full-bg-5 {
+  background: 
+    linear-gradient(
+      rgba(44,177,235, .7), 
+      rgba(44,177,235, .5)
+    ),
+    url('http://media-cache-ak0.pinimg.com/originals/82/a8/7a/82a87a5902a4d270ce9e6bb996ce9fbf.jpg')!important;
+    background-size: cover!important;
+}
+
+/*.tinted-image {
+  background: linear-gradient(rgba(255, 114, 3, 0.75), rgba(255, 123, 19, 0.61))!important;
+}*/
+
+.tinted-image-1 {
+  background-image: 
+    linear-gradient(rgba(255, 114, 3, 0.75), rgba(255, 123, 19, 0.61)),
+    url('http://media-cache-ak0.pinimg.com/originals/9f/f8/59/9ff859e4f4580291210afb12164b2c53.jpg')!important;
+    background-size: cover!important;
+  }
+
+.tinted-image-2 {
+  background: 
+    linear-gradient(rgba(255, 114, 3, 0.75), rgba(255, 123, 19, 0.61)),
+    url('http://media-cache-ec0.pinimg.com/originals/a8/4d/62/a84d62550c3f9b9ea8ff4dc2cefb6b06.jpg')!important;
+    background-size: cover!important;
+}
+
+.tinted-image-1:hover {
+  background: 
+    linear-gradient(rgba(255, 114, 3, 0.9), rgba(255, 123, 19, 0.7)),
+    url('http://media-cache-ak0.pinimg.com/originals/9f/f8/59/9ff859e4f4580291210afb12164b2c53.jpg')!important;
+    background-size: cover!important;
+}
+
+.tinted-image-2:hover {
+  background: 
+    linear-gradient(rgba(255, 114, 3, 0.9), rgba(255, 123, 19, 0.7)),
+    url('http://media-cache-ec0.pinimg.com/originals/a8/4d/62/a84d62550c3f9b9ea8ff4dc2cefb6b06.jpg')!important;
+    background-size: cover!important;
+}
+
+.item h2 {
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 15px;
+  text-shadow: 1px 1px 1px rgba(19, 18, 18, 0.98);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.item h4 {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(19, 18, 18, 0.98);
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 15px;
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.item img {
+  height: 175px;
+  box-shadow: 0px -1px 4px 2px rgba(0,0,0,0.75);
+  moz-box-shadow: 0px -1px 4px 2px rgba(0,0,0,0.75);
+  webkit-box-shadow: 0px -1px 4px 2px rgba(0,0,0,0.75);
+}
+
+/*.background-faded {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(10,172,174, .8);
+}
+
+.background-faded-1 {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(200, 73, 145, .8);
+}
+
+.background-faded-h2 {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(255, 114, 3, .8);
+}
+
+.background-faded-5 {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(44,177,235, .8);
+}*/

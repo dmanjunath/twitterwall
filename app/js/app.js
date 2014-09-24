@@ -467,7 +467,7 @@ var blocker = (function () {
   };
 }());
 
-var scheduleTimer = setInterval(schedule, 6000);
+var scheduleTimer = setInterval(schedule, 8000);
 
 // start a new queue and on the callback, render the tweet and animate it down
 var twitterQueue = new Queue(config.timings.showTweetsEvery || 3000, function (item) {
@@ -511,16 +511,84 @@ init();
 var $container = $('#container');
 var pckry = $container.data('packery');
 
-$container.packery({
+// $container.packery({
+//   itemSelector: '.item',
+//   "columnWidth": '.item',
+//   "rowHeight": '.item'
+// });
+
+// $("div[class*='full-bg-']").hover(function(e){
+//   console.log($(e.currentTarget).css("background"));
+// }, function(){
+//   console.log("leave");
+// });
+
+$('#container').packery({
   itemSelector: '.item',
-  gutter: 0,
   "columnWidth": '.item',
-  "rowHeight": '.item',
-  "stamp": ".stamp"
+  "rowHeight": '.item'
 });
+var REG = /<img src=.(.*)'\/>/;
 
+var items = [
+              {
+                title: 'Community Management Fundamentals',
+                image: 'http://image.slidesharecdn.com/communitymgmtbestpracticesonlinemrktgsummitfeb6-110211082901-phpapp02/95/community-management-fundamentals-1-638.jpg',
+                url: 'http://www.slideshare.net/rhappe/community-management-fundamentals',
+                tileBackground: 'linear-gradient(rgba(200, 73, 145, .7), rgba(200, 73, 145, .5))',
+                titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(200, 73, 145, .95);'
+              },
+              {
+                title: 'How to Engage Your Audience Through Content Marketing',
+                image: 'http://cdn2.hubspot.net/hub/312413/file-404865041-jpg/HUG_Buzz_-_December_2013/marcus_sheridan_keynote_image.jpg',
+                url: 'http://www.higherlogic.com/resources/learning-series/how-to-engage-your-audience-through-content-marketing',
+                tileBackground: 'linear-gradient(rgba(10,172,174, .7), rgba(10,172,174, .5))',
+                titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(10,172,174, .95);'
+              },
+              {
+                title: 'Learn How to Build Bigger, Better and More Active Online Communities',
+                image: 'http://higherlogicdownload.s3.amazonaws.com/HUG/6ab9a070-fc6c-4010-a591-23cccea8d851/UploadedImages/HUG%20Buzz/image_8_Steps_Guide_iPad_Icons.png',
+                url: 'http://www.higherlogic.com/resources/learning-series/fever-bee',
+                tileBackground: 'linear-gradient(rgba(255, 114, 3, 0.75), rgba(255, 123, 19, 0.61))',
+                titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(255, 123, 19, .90);'
+              },
+              {
+                title: 'Community is the new marketing',
+                image: 'http://images.eurogamer.net/2013/articles/1/7/0/7/9/7/1/community-is-the-new-marketing-1411045998597.jpg',
+                url: 'http://www.gamesindustry.biz/articles/2014-09-18-community-is-the-new-marketing',
+                tileBackground: 'linear-gradient(rgba(255, 114, 3, 0.75), rgba(255, 123, 19, 0.61))',
+                titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(255, 123, 19, .90);'
+              },
+              {
+                title: '5 Tenets of Engagement Success',
+                image: 'http://model.shoppingdelpaseo.com.br/uploads/2011/07/top5.jpg',
+                url: 'http://hug.higherlogic.com/browse/blogs/blogviewer/?BlogKey=c35b1bed-2da7-42ce-a166-71a355c439c7',
+                tileBackground: 'linear-gradient(rgba(174,176,177, .7), rgba(174,176,177, .5))',
+                titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(111, 111, 111, 0.90);'
+              },
+              {
+                title: 'Online Communities: Just Regular People Behind Those Pixels',
+                image: 'http://pbs.twimg.com/media/Bv54a9AIUAEF6Lb.jpg',
+                url: 'http://associationsnow.com/2014/08/online-communities-just-regular-people-behind-pixels/',
+                tileBackground: 'linear-gradient(rgba(129,191,79, .7), rgba(129,191,79, .5))',
+                titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(129,191,79, .95);'
+              },
+              {
+                title: 'Social Strategy Community: Infographic Tools',
+                image: 'http://pbs.twimg.com/media/Bv54a9AIUAEF6Lb.jpg',
+                url: 'http://hug.higherlogic.com/communities/community-home/viewthread/?GroupId=223&MID=20818&tab=digestviewer',
+                tileBackground: 'linear-gradient(rgba(44,177,235, .7), rgba(44,177,235, .5))',
+                titleBackground: 'height: 100px;width: 100%;position: absolute;bottom: 0px;background-color: rgba(44,177,235, .95);'
+              }
+            ];
 
-
-
-
-
+var hover_colors = [];
+var indexesToReplace = [1, 4, 5];
+for(i = 0; i <= 6; i++) {
+  var stub = items[i].tileBackground + ',url(' + items[i].image + ')';
+  console.log(stub);
+  $('.full-bg-'+i).css('background', stub, 'important').css('background-size', 'cover', 'important').attr('href', items[i].url);
+  var target = $('.background-faded-'+i);
+  target.attr("style", target.attr("style") + "; " + items[i].titleBackground);
+  $('.item-text-'+i).html(items[i].title);
+}

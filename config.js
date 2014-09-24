@@ -10,7 +10,7 @@ var config = {
 
   timings: {
     showNextScheduleEarlyBy: '5m', // show the next schedule 10 minutes early
-    defaultNoticeHoldTime: '1s',
+    defaultNoticeHoldTime: '3s',
     showTweetsEvery: '5s'
   }
 };
