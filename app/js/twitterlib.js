@@ -145,10 +145,7 @@
         }
       },
       datetime: function (time_value) {
-        var values = time_value.split(" "),
-            date = new Date(Date.parse(values[1] + " " + values[2] + ", " + values[5] + " " + values[3]));
-
-        return this.time(date) + ' ' + this.date(date);
+        return moment(time_value).format("ddd MMM DD YYYY hh:mm a");
       },
       relative: function (time_value) {
         var values = time_value.split(" "),
